@@ -119,7 +119,7 @@ function playGame(playerMove){
 
             document.querySelector('.js-moves')
             .innerHTML = ` YOU
-            <img src="images/${playerMove}.png" class="img" alt="">
+            <img src="images/rock.png" class="img" alt="">
             <img src="images/${computerResponse}.png" class="img" alt="">
             COMPUTER`;
 
