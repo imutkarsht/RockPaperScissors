@@ -49,11 +49,11 @@ function playGame(playerMove){
                }
             else if(computerResponse === 'Paper'){
                 result = 'You Won';
-                score.losses += 1;
+                score.wins += 1;
             }
             else if(computerResponse === 'Rock'){
                 result = 'you lose';
-                score.wins += 1;
+                score.losses += 1;
             }
             updateScoreElement();
             document.querySelector('.js-result')
@@ -119,7 +119,7 @@ function playGame(playerMove){
 
             document.querySelector('.js-moves')
             .innerHTML = ` YOU
-            <img src="images/rock.png" class="img" alt="">
+            <img src="images/${playerMove}.png" class="img" alt="">
             <img src="images/${computerResponse}.png" class="img" alt="">
             COMPUTER`;
 
